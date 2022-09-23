@@ -178,7 +178,13 @@ footer {
 		display: flex;
 		flex-direction: column-reverse;
 		.links {
+			position: relative;
+			margin: 20px 100px;
 			width: 80vw;
+		
+			.border{
+				border-bottom:  1px solid black;
+			}
 		}
 	}
 	footer {

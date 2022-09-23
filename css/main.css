@@ -228,7 +228,12 @@ footer h3 {
             flex-direction: column-reverse;
   }
   .wrapper .links {
+    position: relative;
+    margin: 20px 100px;
     width: 80vw;
+  }
+  .wrapper .links .border {
+    border-bottom: 1px solid black;
   }
   footer {
     position: relative;
