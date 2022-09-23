@@ -229,8 +229,9 @@ footer h3 {
   }
   .wrapper .links {
     position: relative;
-    margin: 20px 100px;
+    margin: 20px 0;
     width: 80vw;
+    left: 0;
   }
   .wrapper .links .border {
     border-bottom: 1px solid black;
