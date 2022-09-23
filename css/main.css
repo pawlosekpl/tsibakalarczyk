@@ -1,0 +1,237 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #252729;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #252729;
+  margin: 20px 0;
+  border-radius: 10px;
+  width: 80vw;
+  height: 50px;
+}
+nav .nav-title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #feae31;
+  margin: 0 10px;
+  letter-spacing: 3px;
+  font-size: 26px;
+  text-decoration: none;
+}
+nav .anim::before,
+nav .anim::after {
+  bottom: 7px;
+}
+
+.box {
+  height: 300px;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #252729;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.box .left {
+  margin: 20px;
+  width: 100%;
+}
+.box .left h2 {
+  color: #feae31;
+}
+.box .left .box-text {
+  padding-top: 10px;
+  width: 70%;
+}
+.box .left .line {
+  background-repeat: no-repeat;
+  background-image: url(../img/text_separator.png);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 12px;
+  width: 80%;
+}
+.box .left .description {
+  padding: 5px 0;
+}
+.box .left .podpis {
+  position: relative;
+  color: #feae31;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80vw;
+  border-radius: 8px;
+  margin: 40px 0;
+}
+.wrapper .text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper .wrapper-title {
+  margin: 0 20px 20px;
+}
+.wrapper .opis {
+  width: 55%;
+  margin: 10px 20px;
+}
+.wrapper .line {
+  position: absolute;
+  width: 7px;
+  height: 100px;
+  background-image: url(../img/boxy_separator.png);
+  background-position: center;
+}
+.wrapper .links {
+  position: relative;
+  left: -100px;
+  width: 250px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper .links a {
+  color: #252729;
+  text-decoration: none;
+  margin: 0 10px;
+  line-height: 25px;
+}
+.wrapper .links a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin: 50px 0;
+}
+footer .footer-line {
+  background-repeat: no-repeat;
+  background-image: url(../img/footer_seperator.png);
+  background-position: center;
+  height: 12px;
+  width: 100vw;
+}
+footer h3 {
+  text-align: center;
+}
+
+.right {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/image_big.jpg);
+}
+
+.anim,
+.anim::after,
+.anim::before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.anim::before,
+.anim::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  bottom: 0px;
+  border-bottom: 2px solid #feae31;
+}
+
+.anim::before {
+  right: 50%;
+}
+
+.anim::after {
+  left: 50%;
+}
+
+.anim:hover::before,
+.anim:hover::after {
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .box {
+    height: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .box .right {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+  }
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .wrapper .links {
+    width: 80vw;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+  }
+}/*# sourceMappingURL=main.css.map */
