@@ -227,6 +227,9 @@ footer h3 {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .wrapper .opis {
+    width: 100%;
+  }
   .wrapper .links {
     position: relative;
     margin: 20px 0;
@@ -234,7 +237,7 @@ footer h3 {
     left: 0;
   }
   .wrapper .links .border {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid black;
   }
   footer {
     position: relative;

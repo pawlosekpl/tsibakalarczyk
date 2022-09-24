@@ -177,14 +177,17 @@ footer {
 	.wrapper {
 		display: flex;
 		flex-direction: column-reverse;
+		.opis {
+			width: 100%;
+		}
 		.links {
 			position: relative;
 			margin: 20px 0;
 			width: 80vw;
 			left: 0;
-		
-			.border{
-				border-bottom:  1px solid red;
+
+			.border {
+				border-bottom: 1px solid black;
 			}
 		}
 	}
